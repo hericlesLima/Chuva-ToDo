@@ -1,3 +1,23 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", monospace;
+  background-color: #f5f5f5;
+}
+
+.App {
+  --bg-color: #f5f5f5;
+  --primary: #30475e;
+  --secondary: #f05454;
+}
+
+h1 {
+  font-size: 50px;
+  color: var(--primary);
+}
+
+span{
+    font-size: 20px;
+    font-weight: 400;
+}
