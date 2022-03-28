@@ -4,6 +4,8 @@ import "./pageHeader.scss";
 
 import { Link } from "react-router-dom";
 
+import Logo from '../../assets/logo.png'
+
 export default function PageHeader() {
   const pages = [
     { name: "Home", link: "/" },
@@ -13,9 +15,12 @@ export default function PageHeader() {
 
   return (
     <nav className="header">
-      {pages.map((page) => (
-        <Link to={page.link}>{page.name}</Link>
-      ))}
+      <img src={Logo} alt="" />
+      <div>
+        {pages.map((page) => (
+          <Link to={page.link}>{page.name}</Link>
+        ))}
+      </div>
     </nav>
   );
 }

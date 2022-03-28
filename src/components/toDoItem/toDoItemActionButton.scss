@@ -1,0 +1,16 @@
+.action-button{
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem 1.5rem;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+
+    img{
+        width: auto;
+        height: 1.2rem;
+    }
+}

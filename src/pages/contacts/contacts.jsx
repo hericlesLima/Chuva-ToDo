@@ -1,9 +1,11 @@
 import React from "react";
+import PageHeader from "../../components/header/pageHeader";
+import ToDoTemplate from "../../components/ToDoTemplate/ToDoTemplate";
 
 export default function Contacts() {
     return(
         <div>
-           <h1>TEST</h1> 
+           <PageHeader/>
         </div>
     )
 }
