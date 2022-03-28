@@ -10,6 +10,8 @@ import { Link } from "react-router-dom";
 
 //Assets
 import LottieAnimation from "../../assets/lottie_animation.json";
+import HomeButton from "../../components/homeButton/homeButton";
+import PageHeader from "../../components/header/pageHeader";
 
 export default function Home() {
   const defaultOptions = {
@@ -23,7 +25,7 @@ export default function Home() {
   return (
     <div className="home">
       <header>
-        <ResponsiveAppBar />
+        <PageHeader/>
       </header>
       <section className="home-cntnt">
         <div className="txt">
@@ -32,10 +34,10 @@ export default function Home() {
               Lets organise your <br /> day
             </h1>
             <span>
-              To do list help you organise your day and perform tasks
-              more efficiently
+              To do list help you organise your day and perform tasks more
+              efficiently
             </span>
-            <Link to={'/add_new'}>Get Started</Link>
+            <HomeButton />
           </div>
         </div>
         <div className="img">

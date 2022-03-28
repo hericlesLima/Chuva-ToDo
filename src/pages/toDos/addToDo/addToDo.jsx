@@ -1,19 +1,20 @@
 import React from "react";
 
 //
-import './addTodo.scss'
+import "./addToDo.scss";
 
 //Components
+import AddTextField from "../../../components/textField/textField";
 import ResponsiveAppBar from "../../../components/header/header";
 import Sidebar from "../../../components/sidebar/sidebar";
+import PageHeader from "../../../components/header/pageHeader";
+import ToDoTemplate from "../../../components/ToDoTemplate/ToDoTemplate";
 
 export default function AddToDo() {
   return (
-    <div className="add-todo">
-      <header>
-        <ResponsiveAppBar />
-      </header>
-      <Sidebar />
-    </div>
+    <ToDoTemplate>
+      <AddTextField label="Title" />
+      <AddTextField label="Content" rows="4" />
+    </ToDoTemplate>
   );
 }

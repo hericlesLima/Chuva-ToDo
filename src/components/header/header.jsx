@@ -38,9 +38,9 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static">
+    <AppBar position="static" sx={{color: "#30475e"}}>
       <Container maxWidth="xl">
-        <Toolbar disableGutters>
+        <Toolbar disableGutters sx={{color: "#30475e"}}>
           <Typography
             variant="h6"
             noWrap
@@ -98,14 +98,14 @@ const ResponsiveAppBar = () => {
           </Typography>
 
           {/* Menu responsivo Desktop */}
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+          <Box sx={{ flexGrow: 1,  color: "#30475e", display: { xs: "none", md: "flex" } }}>
             {desktopPages.map((page) => (
               <Button
                 key={page}
                 onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: "white", display: "block" }}
+                sx={{ my: 2, color: "#30475e", display: "block" }}
               >
-                <Link to={page.link}>{page.name}</Link>
+                <Link style={{ color: "#30475e"}} to={page.link}>{page.name}</Link>
               </Button>
             ))}
           </Box>

@@ -6,9 +6,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 //Components
 import Home from "./pages/home/home";
 import AddToDo from "./pages/todos/addToDo/addToDo";
-import ToDoList from "./pages/todos/toDoList";
-import Board from "./pages/todos/board";
+import ToDoList from "./pages/todos/toDoList/toDoList";
+import Board from "./pages/todos/board/board";
 import Contacts from "./pages/contacts/contacts";
+import PageHeader from "./components/header/pageHeader";
 
 export default function App() {
   return (

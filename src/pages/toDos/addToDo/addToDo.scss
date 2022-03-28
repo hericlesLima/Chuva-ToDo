@@ -1,0 +1,23 @@
+.add-todo {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .add-to-do-cntnt {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+
+    .add-text-field {
+      width: 80%;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+    }
+  }
+}
