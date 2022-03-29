@@ -1,1 +1,1 @@
-# To Do App for Chuva.io code challenge
+# To Do App for Chuva code challenge
