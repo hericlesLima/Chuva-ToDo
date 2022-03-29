@@ -1,12 +1,10 @@
 import React from "react";
-import ResponsiveAppBar from "../../components/header/header";
 
 //Css
 import "./home.scss";
 
 //Libraries
 import Lottie from "lottie-react";
-import { Link } from "react-router-dom";
 
 //Assets
 import LottieAnimation from "../../assets/lottie_animation.json";
@@ -31,7 +29,7 @@ export default function Home() {
         <div className="txt">
           <div>
             <h1>
-              Lets organise your <br /> day
+              Let's organise your day
             </h1>
             <span>
               To do list help you organise your day and perform tasks more

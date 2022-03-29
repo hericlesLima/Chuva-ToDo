@@ -4,14 +4,14 @@ import React from "react";
 import "./addToDo.scss";
 
 //Components
-import AddTextField from "../../../components/textField/textField";
 import ToDoTemplate from "../../../components/ToDoTemplate/ToDoTemplate";
+import TextField from "../../../components/textField/textField";
 
 export default function AddToDo() {
   return (
     <ToDoTemplate>
-      <AddTextField label="Title" />
-      <AddTextField label="Content" rows="12" />
+      <TextField placeholder="Title"/>
+      <TextField placeholder="Content"/>
     </ToDoTemplate>
   );
 }

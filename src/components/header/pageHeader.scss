@@ -10,7 +10,7 @@
     width: auto;
     position: absolute;
     left: 3.5rem;
-    top: 2rem;
+    top: 0.8rem;
   }
 
   div {
@@ -23,5 +23,11 @@
       margin: 0rem 2rem;
       text-decoration: none;
     }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .header{
+    display: none;
   }
 }

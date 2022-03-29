@@ -4,12 +4,14 @@
   box-sizing: border-box;
   font-family: "Poppins", monospace;
   /* background-color: #f5f5f5; */
+  color: var(--primary);
 }
 
 .App {
   --bg-color: #f5f5f5;
   --primary: #30475e;
   --secondary: #f05454;
+  color: var(--primary);
 }
 
 h1 {
@@ -17,11 +19,27 @@ h1 {
   color: var(--primary);
 }
 
-span{
-    font-size: 20px;
-    font-weight: 400;
+span {
+  font-size: 20px;
+  font-weight: 300;
 }
 
 a {
-    color: var(--primary);
+  color: var(--primary);
+}
+
+body::-webkit-scrollbar {
+  width: 0.3rem;
+}
+
+/*fundo da barra*/
+
+::-webkit-scrollbar-track {
+  background: var(--bg-color);
+}
+
+/*indicador de altura da pagina*/
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
 }

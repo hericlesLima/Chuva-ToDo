@@ -55,7 +55,7 @@
       flex-direction: column;
 
       .txt {
-          order: 2;
+        order: 2;
         width: 100%;
 
         div {
@@ -65,12 +65,20 @@
           span {
             text-align: center;
           }
+
+          h1 {
+            font-size: 35px;
+          }
         }
       }
 
       .img {
         order: 1;
         width: 100%;
+
+        .animation {
+          width: 70%;
+        }
       }
     }
   }
