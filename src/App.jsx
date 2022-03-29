@@ -10,8 +10,10 @@ import ToDoList from "./pages/todos/toDoList/toDoList";
 import Board from "./pages/todos/board/board";
 import Contacts from "./pages/contacts/contacts";
 import PageHeader from "./components/header/pageHeader";
+import { useSelector } from "react-redux";
 
 export default function App() {
+  const state = useSelector((state) => ({ ...state }));
   return (
     <div className="App">
       <BrowserRouter>

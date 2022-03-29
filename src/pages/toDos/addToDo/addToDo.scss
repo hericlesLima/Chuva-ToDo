@@ -1,23 +1,41 @@
-.add-todo {
+.todo-btns{
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-  .add-to-do-cntnt {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: row;
+  .add {
+    width: 15rem;
+    padding: 0.8rem 1rem;  
+    border-style: none;
+    border-radius: 7px;
+    background-color: var(--primary);
+    color: var(--bg-color);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
 
-    .add-text-field {
-      width: 80%;
-      height: 90vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
+  .add:hover{
+    background-color: #1f2f41;
+  }
 
-    }
+  .cancel {
+    width: 15rem;
+    padding: 0.8rem 1rem;  
+    border-style: none;
+    border-radius: 7px;
+    background-color: var(--bg-color);
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+
+  .cancel:hover{
+    background-color: #cfcece;
   }
 }

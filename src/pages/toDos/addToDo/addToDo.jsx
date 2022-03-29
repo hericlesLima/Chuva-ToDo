@@ -12,6 +12,10 @@ export default function AddToDo() {
     <ToDoTemplate>
       <TextField placeholder="Title"/>
       <TextField placeholder="Content"/>
+      <div className="todo-btns">
+        <button className="add" type="submit">Add to do</button>
+        <button className="cancel" type="submit">Cancel</button>
+      </div>
     </ToDoTemplate>
   );
 }

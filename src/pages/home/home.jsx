@@ -10,6 +10,7 @@ import Lottie from "lottie-react";
 import LottieAnimation from "../../assets/lottie_animation.json";
 import HomeButton from "../../components/homeButton/homeButton";
 import PageHeader from "../../components/header/pageHeader";
+import PageHamburguer from "../../components/header/pageHamburguer";
 
 export default function Home() {
   const defaultOptions = {
@@ -24,6 +25,7 @@ export default function Home() {
     <div className="home">
       <header>
         <PageHeader/>
+        <PageHamburguer />
       </header>
       <section className="home-cntnt">
         <div className="txt">
