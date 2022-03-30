@@ -2,14 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 //Css
-import './pageHamburguer.css'
-
-//Assets
-import Home from "../../assets/home.png";
-import Add from "../../assets/add.png";
-import List from "../../assets/todolist.png";
-import Board from "../../assets/board.png";
-import Contacts from "../../assets/contacts.png";
+import "./pageHamburguer.css";
 
 export default function PageHamburguer() {
   return (

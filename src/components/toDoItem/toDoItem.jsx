@@ -9,8 +9,7 @@ import Right from "../../assets/right.png";
 import Wrong from "../../assets/wrong.png";
 import { Link } from "react-router-dom";
 
-export default function ToDoItem(props) { 
-
+export default function ToDoItem(props) {
   return (
     <div className={props.completed ? "to-do-item-done" : "to-do-item"}>
       <span>{props.todo}</span>

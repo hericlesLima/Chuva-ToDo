@@ -4,16 +4,15 @@ const initialState = [{ id: 1, task: "Start adding tasks", completed: false }];
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    
     case "CREATE_TO_DO":
       const newTodo = {
         id: uuidv4(),
         task: action.payload,
         completed: false,
       };
-      
+
       const createdToDo = [...state, newTodo];
-      
+
       return createdToDo;
 
     case "EDIT_TO_DO":
@@ -22,7 +21,7 @@ const reducer = (state = initialState, action) => {
           return { ...todo, task: action.payload.updateTask };
         }
       });
-     
+
       return {
         ...state,
       };

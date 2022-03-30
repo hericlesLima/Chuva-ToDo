@@ -1,10 +1,13 @@
 import React from "react";
 
+//Css
 import "./pageHeader.scss";
 
+//Router
 import { Link } from "react-router-dom";
 
-import Logo from '../../assets/logo.png'
+//Assets
+import Logo from "../../assets/logo.png";
 
 export default function PageHeader() {
   const pages = [
@@ -18,7 +21,9 @@ export default function PageHeader() {
       <img src={Logo} alt="Logo" />
       <div>
         {pages.map((page) => (
-          <Link key={page.name} to={page.link}>{page.name}</Link>
+          <Link key={page.name} to={page.link}>
+            {page.name}
+          </Link>
         ))}
       </div>
     </nav>

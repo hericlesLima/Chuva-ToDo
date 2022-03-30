@@ -1,4 +1,4 @@
-.todo-btns{
+.todo-btns {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,7 +7,7 @@
 
   .add {
     width: 15rem;
-    padding: 0.8rem 1rem;  
+    padding: 0.8rem 1rem;
     border-style: none;
     border-radius: 7px;
     background-color: var(--primary);
@@ -18,13 +18,13 @@
     cursor: pointer;
   }
 
-  .add:hover{
+  .add:hover {
     background-color: #1f2f41;
   }
 
   .cancel {
     width: 15rem;
-    padding: 0.8rem 1rem;  
+    padding: 0.8rem 1rem;
     border-style: none;
     border-radius: 7px;
     background-color: var(--bg-color);
@@ -35,7 +35,7 @@
     cursor: pointer;
   }
 
-  .cancel:hover{
+  .cancel:hover {
     background-color: #cfcece;
   }
 }
