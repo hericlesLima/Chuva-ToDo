@@ -7,15 +7,21 @@ import "./addToDo.scss";
 import ToDoTemplate from "../../../components/ToDoTemplate/ToDoTemplate";
 import TextField from "../../../components/textField/textField";
 
+//Redux
+import { createToDo } from "../../../store/actionCreator";
+import { useDispatch } from "react-redux";
+
 export default function AddToDo() {
+  
+  const dispatch = useDispatch();
+
+  const create = (newTodo) => {
+    dispatch(createToDo(newTodo))
+  }
+
   return (
     <ToDoTemplate>
-      <TextField placeholder="Title"/>
-      <TextField placeholder="Content"/>
-      <div className="todo-btns">
-        <button className="add" type="submit">Add to do</button>
-        <button className="cancel" type="submit">Cancel</button>
-      </div>
+      <TextField createTodo={create} placeholder="Add your task here ..."/>
     </ToDoTemplate>
   );
 }

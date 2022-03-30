@@ -6,7 +6,7 @@ import './toDoItemActionButton.scss'
 export default function ToDoItemActionButton(props) {
   return (
     <div>
-      <button className="action-button">
+      <button className="action-button" onClick={props.event}>
         <img src={props.src} />
       </button>
     </div>

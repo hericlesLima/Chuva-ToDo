@@ -7,7 +7,7 @@
   border-radius: 5px;
   margin-bottom: 2rem;
   box-shadow: 0px 6px 25px 0px rgba(48, 71, 94, 0.25);
-  
+
   span {
     padding: 0.5rem 0rem 0.5rem 2rem;
     color: var(--primary);
@@ -16,6 +16,62 @@
   .btns {
     display: flex;
     margin: 0.5rem 2rem;
+  }
 
+  .action-button {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    border-style: none;
+    cursor: pointer;
+
+    img {
+      width: auto;
+      height: 1.2rem;
+    }
+  }
+}
+
+.to-do-item-done {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: solid 1px var(--primary);
+  border-radius: 5px;
+  margin-bottom: 2rem;
+  box-shadow: 0px 6px 25px 0px rgba(48, 71, 94, 0.25);
+  background-color: var(--secondary);
+
+  span {
+    padding: 0.5rem 0rem 0.5rem 2rem;
+    color: var(--primary);
+    background-color: var(--secondary);
+  }
+
+  .btns {
+    display: flex;
+    margin: 0.5rem 2rem;
+    background-color: var(--secondary);
+
+    .action-button {
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--secondary);
+      border-style: none;
+      cursor: pointer;
+  
+      img {
+        width: auto;
+        height: 1.2rem;
+        background-color: var(--secondary);
+      }
+    }
   }
 }

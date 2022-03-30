@@ -18,7 +18,7 @@ export default function PageHeader() {
       <img src={Logo} alt="Logo" />
       <div>
         {pages.map((page) => (
-          <Link to={page.link}>{page.name}</Link>
+          <Link key={page.name} to={page.link}>{page.name}</Link>
         ))}
       </div>
     </nav>

@@ -1,9 +1,9 @@
 export const createToDo = (todo) => {
-    console.log(amount)
+    console.log(todo)
     return (dispatch) => {
       dispatch({
         type: "CREATE_TO_DO",
-        payload: amount,
+        payload: todo,
       });
     };
   };
@@ -29,7 +29,7 @@ export const createToDo = (todo) => {
   };
 
   export const completeToDo = (todo) => {
-    console.log(todo)
+    // console.log(todo)
     return (dispatch) => {
       dispatch({
         type: "COMPLETE_TO_DO",

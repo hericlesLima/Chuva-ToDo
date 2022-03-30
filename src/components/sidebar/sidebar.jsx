@@ -22,7 +22,7 @@ export default function Sidebar() {
     <section className="sidebar">
       <div>
         {links.map((link) => (
-          <Link to={link.to}>
+          <Link key={link.name} to={link.to}>
             <img src={link.src} />
             {link.name}
           </Link>
