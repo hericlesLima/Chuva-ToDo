@@ -25,15 +25,13 @@ export default function Home() {
   return (
     <div className="home">
       <header>
-        <PageHeader/>
+        <PageHeader />
         <PageHamburguer />
       </header>
       <section className="home-cntnt">
         <div className="txt">
           <div>
-            <h1>
-              Let's organise your day
-            </h1>
+            <h1>Let's organise your day</h1>
             <span>
               To do list help you organise your day and perform tasks more
               efficiently

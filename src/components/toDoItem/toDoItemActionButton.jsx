@@ -1,7 +1,7 @@
 import { getThemeProps } from "@mui/system";
 import React from "react";
 
-import './toDoItemActionButton.scss'
+import "./toDoItemActionButton.scss";
 
 export default function ToDoItemActionButton(props) {
   return (

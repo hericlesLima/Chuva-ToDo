@@ -12,16 +12,15 @@ import { createToDo } from "../../../store/actionCreator";
 import { useDispatch } from "react-redux";
 
 export default function AddToDo() {
-  
   const dispatch = useDispatch();
 
   const create = (newTodo) => {
-    dispatch(createToDo(newTodo))
-  }
+    dispatch(createToDo(newTodo));
+  };
 
   return (
     <ToDoTemplate>
-      <TextField createTodo={create} placeholder="Add your task here ..."/>
+      <TextField createTodo={create} placeholder="Add your task here ..." />
     </ToDoTemplate>
   );
 }

@@ -8,7 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Components
 import Home from "./pages/home/home";
-import AddToDo from "./pages/toDos/addToDo/addTodo";
+import AddToDo from "./pages/toDos/addToDo/addToDo";
 import ToDoList from "./pages/toDos/toDoList/todoList";
 import Board from "./pages/toDos/board/board";
 import EditToDo from "./pages/toDos/editTodo/editTodo";

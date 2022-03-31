@@ -5,9 +5,7 @@ import ToDoTemplate from "../../../components/ToDoTemplate/ToDoTemplate";
 export default function Board() {
   return (
     <div>
-      <ToDoTemplate>
-          
-      </ToDoTemplate>
+      <ToDoTemplate></ToDoTemplate>
     </div>
   );
 }
