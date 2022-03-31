@@ -2,19 +2,33 @@ import React, { useState } from "react";
 
 import "./textField.scss";
 
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+
 export default function TextField(props) {
   const [task, setTask] = useState("");
 
   const handleSubmit = (e) => {
-     e.preventDefault();
-     props.createTodo(task) 
-  }
+    e.preventDefault();
+    props.createTodo(task);
+  };
+
+  const notifyDownload = () =>
+    toast.success("Task added sucessful", {
+      position: "top-right",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
 
   return (
     <div className="text-field">
       <form className="todo-form" onSubmit={handleSubmit}>
         <input
-        autoComplete="off"
+          autoComplete="off"
           placeholder={props.placeholder}
           type="text"
           id="task"
@@ -22,9 +36,10 @@ export default function TextField(props) {
           value={task}
           onChange={(e) => setTask(e.target.value)}
         />
-        <button className="add" type="submit">
+        <button className="add" type="submit" onClick={notifyDownload}>
           Save
         </button>
+        <ToastContainer />
       </form>
     </div>
   );

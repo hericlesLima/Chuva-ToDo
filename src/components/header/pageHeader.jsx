@@ -10,7 +10,6 @@ export default function PageHeader() {
   const pages = [
     { name: "Home", link: "/" },
     { name: "Todos", link: "/add_new" },
-    { name: "Contacts", link: "/contacts" },
   ];
 
   return (

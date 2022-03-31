@@ -16,6 +16,7 @@ export default function Home() {
   const defaultOptions = {
     loop: true,
     autoplay: true,
+    animationData: LottieAnimation,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -42,7 +43,7 @@ export default function Home() {
         </div>
         <div className="img">
           <div className="animation">
-            <Lottie options={defaultOptions} animationData={LottieAnimation} />
+            <Lottie options={{loop: true, autoplay: true}} animationData={LottieAnimation} />
           </div>
         </div>
       </section>

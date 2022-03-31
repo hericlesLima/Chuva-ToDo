@@ -1,0 +1,16 @@
+.splash-screen{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f05454;
+
+    .splash-logo{
+        width: auto;
+        height: 15vh;
+        margin-bottom: 2rem;
+        margin-right: 0rem;
+    }
+}

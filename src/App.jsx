@@ -1,3 +1,6 @@
+import { useEffect, useState } from "react";
+
+//Css
 import "./App.css";
 
 //Libraries
@@ -5,14 +8,24 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 //Components
 import Home from "./pages/home/home";
-import AddToDo from "./pages/todos/addToDo/addToDo";
-import ToDoList from "./pages/todos/toDoList/toDoList";
-import Board from "./pages/todos/board/board";
-import Contacts from "./pages/contacts/contacts";
-import EditToDo from "./pages/todos/editTodo/editToDo";
+import AddToDo from "./pages/toDos/addToDo/addTodo";
+import ToDoList from "./pages/toDos/toDoList/todoList";
+import Board from "./pages/toDos/board/board";
+import EditToDo from "./pages/toDos/editTodo/editTodo";
+import SplashScreen from "./components/splashScreen/splashScreen";
 
 export default function App() {
-  return (
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 1500);
+  }, []);
+
+  return isLoading ? (
+    <SplashScreen />
+  ) : (
     <div className="App">
       <BrowserRouter>
         <Routes>
@@ -21,7 +34,6 @@ export default function App() {
           <Route path="/to_do_list" element={<ToDoList />} />
           <Route path="/edit_to_do" element={<EditToDo />} />
           <Route path="/board" element={<Board />} />
-          <Route path="/contacts" element={<Contacts />} />
         </Routes>
       </BrowserRouter>
     </div>
