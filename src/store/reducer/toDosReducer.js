@@ -1,6 +1,6 @@
 import { v4 as uuidv4 } from "uuid";
 
-const initialState = [{ id: 1, task: "Start adding tasks", completed: false }];
+const initialState = [];
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
